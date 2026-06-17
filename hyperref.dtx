@@ -10475,6 +10475,8 @@
 %
 %    The ``french'' package defines counter \cmd{\thechapter}
 %    by \cmd{\newcounter{chapter}}, if \cmd{\@ifundefined{chapter}}.
+%    
+%    change  2026-06-17: set the target prefix, issue gh/424
 %    \begin{macrocode}
 \begingroup\expandafter\expandafter\expandafter\endgroup
 \expandafter\ifx\csname chapter\endcsname\relax
@@ -10484,6 +10486,7 @@
 \fi
 \def\Hy@appendixstring{appendix}
 \def\Hy@chapapp{\Hy@chapterstring}
+\hypersetup{targetprefix={chapter}{\Hy@chapapp}}
 \@ifundefined{appendix}{%
 }{%
   \let\HyOrg@appendix\appendix
@@ -10500,11 +10503,12 @@
   }%
   \def\appendix{%
     \@ifundefined{chapter}{%
-      \gdef\theHsection{\Hy@AlphNoErr{section}}%
+      \gdef\theHsection{\Hy@AlphNoErr{section}}%      
     }{%
       \gdef\theHchapter{\Hy@AlphNoErr{chapter}}%
     }%
     \xdef\Hy@chapapp{\Hy@appendixstring}%
+    \hypersetup{targetprefix={section}{\Hy@appendixstring}}%
     \HyOrg@appendix
   }%
 }
