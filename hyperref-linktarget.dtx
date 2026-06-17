@@ -201,11 +201,7 @@
 % an internal absolute counter is created.
 % The counter is stepped at every call (and also by other \pkg{hyperref} commands).
 % The prefix is added with a star and a period (see above for
-% the allowed chars). The default prefix is \texttt{page}. It can be changed with 
-% \begin{verbatim}
-% \hypersetup{target-prefix= {anon}{prefix}}
-% \end{verbatim}
-%
+% the allowed chars). The default prefix is \texttt{page}.
 %
 % \begin{syntax}
 % \begin{tabular}{@{}ll}
@@ -215,9 +211,14 @@
 % \end{tabular}
 % \end{syntax}
 %
-% As an example the
-% \pkg{hyperref} command \cs{phantomsection} is equivalent to
+%  The \pkg{hyperref} command \cs{phantomsection} is now defined as
 % \texttt{\cs{MakeLinkTarget}[section]\{\}}.
+% 
+% The default prefix can be changed by changing the prefix of the 
+% virtual counter \texttt{anon}:
+% \begin{verbatim}
+% \hypersetup{target-prefix= {anon}{prefix}}
+% \end{verbatim}
 %
 % \subsection*{Manual target names}
 % \begin{syntax}
