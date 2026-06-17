@@ -57,7 +57,6 @@ Completed box being shipped out [1]
 ..........\glue 3.0
 ..........\hbox(15.91666+10.91666)x50.16672
 ...........\kern 3.0
-...........\mathon
 ...........\vbox(15.91666+10.91666)x44.16672
 ............\pdfdest name{Item.1} xyz
 ............\penalty 10000
@@ -112,7 +111,6 @@ Completed box being shipped out [1]
 .............\glue(\rightskip) 0.0
 .............\kern 0.0
 ............\glue 0.0
-...........\mathoff
 ...........\kern 3.0
 ..........\glue 3.0
 .........\rule(*+*)x0.4

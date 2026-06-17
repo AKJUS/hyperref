@@ -308,36 +308,101 @@ endobj
 47 0 obj
 << /Type /FontDescriptor /FontName /GCRMMP+Dingbats /Flags 4 /FontBBox [ -1 -143 981 819 ] /Ascent 708 /CapHeight 708 /Descent 0 /ItalicAngle 0 /StemV 0 /XHeight 400 /CharSet( /a97) /FontFile 48 0 R >>
 endobj
+49 0 obj
+<< /Length 1029 >>       
+stream
+%!PS-Adobe-3.0 Resource-CMap
+%%DocumentNeededResources: ProcSet (CIDInit)
+%%IncludeResource: ProcSet (CIDInit)
+%%BeginResource: CMap (TeX-pzdr-builtin-0)
+%%Title: (TeX-pzdr-builtin-0 TeX pzdr-builtin 0)
+%%Version: 1.000
+%%EndComments
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (TeX)
+/Ordering (pzdr-builtin)
+/Supplement 0
+>> def
+/CMapName /TeX-pzdr-builtin-0 def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+12 beginbfrange
+<21> <24> <2701>
+<26> <29> <2706>
+<2C> <47> <270C>
+<49> <6B> <2729>
+<6F> <72> <274F>
+<78> <7E> <2758>
+<A1> <A7> <2761>
+<AC> <B5> <2460>
+<B6> <D4> <2776>
+<D6> <D7> <2194>
+<D8> <EF> <2798>
+<F1> <FE> <27B1>
+endbfrange
+18 beginbfchar
+<20> <0020>
+<25> <260E>
+<2A> <261B>
+<2B> <261E>
+<48> <2605>
+<6C> <25CF>
+<6D> <274D>
+<6E> <25A0>
+<73> <25B2>
+<74> <25BC>
+<75> <25C6>
+<76> <2756>
+<77> <25D7>
+<A8> <2663>
+<A9> <2666>
+<AA> <2665>
+<AB> <2660>
+<D5> <2192>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%EndResource
+%%EOF
+endstream
+endobj
 12 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /GCRMMP+Dingbats /FontDescriptor 47 0 R /FirstChar 123 /LastChar 123 /Widths 46 0 R >>
+<< /Type /Font /Subtype /Type1 /BaseFont /GCRMMP+Dingbats /FontDescriptor 47 0 R /FirstChar 123 /LastChar 123 /Widths 46 0 R /ToUnicode 49 0 R >>
 endobj
 25 0 obj
 << /Type /Pages  /Count 1 /Kids [ 6 0 R ] >>
 endobj
-49 0 obj
+50 0 obj
 << /Type /Outlines /First 3 0 R /Last 3 0 R /Count 1 >>
 endobj
 3 0 obj
-<< /Title 4 0 R /A 1 0 R /Parent 49 0 R >>
-endobj
-50 0 obj
-<< /Names [ (Doc-Start) 22 0 R (page.1) 21 0 R (section.1) 2 0 R ] /Limits [ (Doc-Start) (section.1) ] >>
+<< /Title 4 0 R /A 1 0 R /Parent 50 0 R >>
 endobj
 51 0 obj
-<< /Dests 50 0 R >>
+<< /Names [ (Doc-Start) 22 0 R (page.1) 21 0 R (section.1) 2 0 R ] /Limits [ (Doc-Start) (section.1) ] >>
 endobj
 52 0 obj
-<< /Type /Catalog /Pages 25 0 R /Outlines 49 0 R /Names 51 0 R /PageMode/UseOutlines/AcroForm 27 0 R /OpenAction 5 0 R >>
+<< /Dests 51 0 R >>
 endobj
 53 0 obj
+<< /Type /Catalog /Pages 25 0 R /Outlines 50 0 R /Names 52 0 R /PageMode/UseOutlines/AcroForm 27 0 R /OpenAction 5 0 R >>
+endobj
+54 0 obj
 << /Producer (LuaTeX)/Author(\376\377\000G\000r\000\374\000\337\000e\145\351\231\020\330\076\335\206)/Title(\376\377\000a\000b\000c)/Subject()/Creator(LaTeX with hyperref)/Keywords() /Trapped /False >>
 endobj
 xref
-0 54
+0 55
 0000000000 65535 f 
 0000000020 00000 n 
 0000003759 00000 n 
-0000014864 00000 n 
+0000015971 00000 n 
 0000000065 00000 n 
 0000000155 00000 n 
 0000001879 00000 n 
@@ -346,7 +411,7 @@ xref
 0000003288 00000 n 
 0000000203 00000 n 
 0000000418 00000 n 
-0000014587 00000 n 
+0000015676 00000 n 
 0000000488 00000 n 
 0000000988 00000 n 
 0000011361 00000 n 
@@ -359,7 +424,7 @@ xref
 0000003698 00000 n 
 0000008664 00000 n 
 0000006194 00000 n 
-0000014731 00000 n 
+0000015838 00000 n 
 0000002003 00000 n 
 0000003901 00000 n 
 0000004016 00000 n 
@@ -383,13 +448,14 @@ xref
 0000011713 00000 n 
 0000014369 00000 n 
 0000011736 00000 n 
-0000014792 00000 n 
-0000014922 00000 n 
-0000015044 00000 n 
-0000015080 00000 n 
-0000015218 00000 n 
+0000014587 00000 n 
+0000015899 00000 n 
+0000016029 00000 n 
+0000016151 00000 n 
+0000016187 00000 n 
+0000016325 00000 n 
 trailer
-<< /Size 54 /Root 52 0 R /Info 53 0 R >>
+<< /Size 55 /Root 53 0 R /Info 54 0 R >>
 startxref
-15436
+16543
 %%EOF
