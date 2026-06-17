@@ -10486,7 +10486,7 @@
 \fi
 \def\Hy@appendixstring{appendix}
 \def\Hy@chapapp{\Hy@chapterstring}
-\hypersetup{targetprefix={chapter}{\Hy@chapapp}}
+\hypersetup{target-prefix={chapter}{\Hy@chapapp}}
 \@ifundefined{appendix}{%
 }{%
   \let\HyOrg@appendix\appendix
@@ -10508,7 +10508,7 @@
       \gdef\theHchapter{\Hy@AlphNoErr{chapter}}%
     }%
     \xdef\Hy@chapapp{\Hy@appendixstring}%
-    \hypersetup{targetprefix={section}{\Hy@appendixstring}}%
+    \hypersetup{target-prefix={section}{\Hy@appendixstring}}%
     \HyOrg@appendix
   }%
 }

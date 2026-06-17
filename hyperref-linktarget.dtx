@@ -183,12 +183,12 @@
 % with existing counter names and names for \cs{autoref}
 % should be adjusted if needed.
 % 
-% The default prefix can be changed with the key \texttt{targetprefix}
+% The default prefix can be changed with the key \texttt{target-prefix}
 % of \cs{hypersetup} which take as value two brace groups: the counter name and the
 % new prefix. So e.g. to change the prefix of a chapter to \texttt{appendix} you can
 % use 
 % \begin{verbatim}
-% \hypersetup{targetprefix= {chapter}{appendix}}
+% \hypersetup{target-prefix= {chapter}{appendix}}
 % \end{verbatim}
 %
 %
@@ -201,7 +201,10 @@
 % an internal absolute counter is created.
 % The counter is stepped at every call (and also by other \pkg{hyperref} commands).
 % The prefix is added with a star and a period (see above for
-% the allowed chars). The default prefix is \texttt{page}.
+% the allowed chars). The default prefix is \texttt{page}. It can be changed with 
+% \begin{verbatim}
+% \hypersetup{target-prefix= {anon}{prefix}}
+% \end{verbatim}
 %
 %
 % \begin{syntax}
@@ -589,12 +592,12 @@
     } 
     { @@_target_#1_prefix: }{#2} 
  }
-\define@key{Hyp}{targetprefix}
+\define@key{Hyp}{target-prefix}
  {
    \@@_target_set_prefix:nn #1
  }
 \keys_define:nn{hyp}
- { targetprefix.code:n = \@@_target_set_prefix:nn #1 }
+ { target-prefix .code:n = \@@_target_set_prefix:nn #1 }
  
 %    \end{macrocode}
 % \begin{macro}{\NextLinkTarget}

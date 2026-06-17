@@ -9,11 +9,11 @@
 \autoref{chap:appendix}, \autoref{chap:annex}
 \chapter{A chapter}\lipsum
 \appendix
-\hypersetup{targetprefix={chapter}{appendix}}
+\hypersetup{target-prefix={chapter}{appendix}}
 
 \phantomsection
 \MakeLinkTarget{}
-\hypersetup{targetprefix={anon}{blub}}
+\hypersetup{target-prefix={anon}{blub}}
 \MakeLinkTarget{}
 \phantomsection
 \chapter{An appendix}\label{chap:appendix}\lipsum
@@ -24,7 +24,7 @@
 %\makeatother
 %\renewcommand{\appendixname}{Annex}
 
-\hypersetup{targetprefix={chapter}{annex}}
+\hypersetup{target-prefix={chapter}{annex}}
 \appendix
 \chapter{An annex}\label{chap:annex}\lipsum
 
