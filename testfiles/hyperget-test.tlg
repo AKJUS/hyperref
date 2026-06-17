@@ -142,7 +142,7 @@ Completed box being shipped out [3]
 ...\glue(\lineskip) 0.0
 ...\vbox(550.0+0.0)x345.0, glue set 539.94232fil
 ....\glue(\topskip) 5.69446
-....\hbox(4.30554+1.94444)x345.0, glue set 281.61104fil
+....\hbox(4.30554+1.94444)x345.0, glue set 281.61105fil
 .....\hbox(0.0+0.0)x15.0
 .....\OT1/cmr/m/n/10 s
 .....\OT1/cmr/m/n/10 o
@@ -156,6 +156,7 @@ Completed box being shipped out [3]
 .....\glue 3.33333 plus 1.66666 minus 1.11111
 .....\write1{\newlabel{page}{{}{\thepage }{some section}{section*.1}{}}}
 .....\penalty 10000
+.....\glue -0.00002
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0

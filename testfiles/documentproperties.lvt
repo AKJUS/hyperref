@@ -10,16 +10,16 @@
 \START
 
 \ExplSyntaxOn
-\prop_show:N\g__hyp_documentproperties_prop
+\ShowDocumentProperties
 %\str
-\edef\test{\GetDocumentProperties{hyperref/pdfauthor}}
+\edef\test{\GetDocumentProperty{hyperref/pdfauthor}}
 \show\test
-\edef\test{\GetDocumentProperties{hyperref/pdftitle}}
+\edef\test{\GetDocumentProperty{hyperref/pdftitle}}
 \show\test
-\edef\test{\GetDocumentProperties{hyperref/pdfkeywords}}
+\edef\test{\GetDocumentProperty{hyperref/pdfkeywords}}
 \show\test
-\edef\test{\GetDocumentProperties{hyperref/pdfsubject}}
+\edef\test{\GetDocumentProperty{hyperref/pdfsubject}}
 \show\test
 
 \ExplSyntaxOff
-\end{document}
+\end{document} 

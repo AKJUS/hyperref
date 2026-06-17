@@ -5728,9 +5728,9 @@
 %    Instead of package babel's definition of \cmd{\addto} the
 %    implementation of package varioref is used. Additionally
 %    argument |#1| is checked for \cmd{\relax}.
+%    change 2026-06-17: do not execute \cmd{HyLang@XXX} here, gh/425
 %    \begin{macrocode}
 \def\HyLang@addto#1#2{%
-  #2%
   \@temptokena{#2}%
   \ifx#1\relax
     \let#1\@empty
@@ -5767,6 +5767,10 @@
       \noexpand\define@key{Hyp}{#1}[]{%
         \noexpand\@ifundefined{HyLang@#1@done}{%
           \noexpand\HyLang@addto{\noexpand##1}{\noexpand##2}%
+%    \end{macrocode}
+% Execute the command here to setup the language if babel is not used: gh/425
+%    \begin{macrocode}
+          \noexpand\UseName{HyLang@#2}%
           #3%
           \noexpand\@namedef{HyLang@#1@done}{}%
         }{}%

@@ -345,26 +345,91 @@ endobj
 39 0 obj
 << /Type /FontDescriptor /FontName /GCRMMP+Dingbats /Flags 4 /FontBBox [ -1 -143 981 819 ] /Ascent 708 /CapHeight 708 /Descent 0 /ItalicAngle 0 /StemV 0 /XHeight 400 /CharSet( /a97) /FontFile 40 0 R >>
 endobj
+41 0 obj
+<< /Length 1029 >>       
+stream
+%!PS-Adobe-3.0 Resource-CMap
+%%DocumentNeededResources: ProcSet (CIDInit)
+%%IncludeResource: ProcSet (CIDInit)
+%%BeginResource: CMap (TeX-pzdr-builtin-0)
+%%Title: (TeX-pzdr-builtin-0 TeX pzdr-builtin 0)
+%%Version: 1.000
+%%EndComments
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (TeX)
+/Ordering (pzdr-builtin)
+/Supplement 0
+>> def
+/CMapName /TeX-pzdr-builtin-0 def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+12 beginbfrange
+<21> <24> <2701>
+<26> <29> <2706>
+<2C> <47> <270C>
+<49> <6B> <2729>
+<6F> <72> <274F>
+<78> <7E> <2758>
+<A1> <A7> <2761>
+<AC> <B5> <2460>
+<B6> <D4> <2776>
+<D6> <D7> <2194>
+<D8> <EF> <2798>
+<F1> <FE> <27B1>
+endbfrange
+18 beginbfchar
+<20> <0020>
+<25> <260E>
+<2A> <261B>
+<2B> <261E>
+<48> <2605>
+<6C> <25CF>
+<6D> <274D>
+<6E> <25A0>
+<73> <25B2>
+<74> <25BC>
+<75> <25C6>
+<76> <2756>
+<77> <25D7>
+<A8> <2663>
+<A9> <2666>
+<AA> <2665>
+<AB> <2660>
+<D5> <2192>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%EndResource
+%%EOF
+endstream
+endobj
 8 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /GCRMMP+Dingbats /FontDescriptor 39 0 R /FirstChar 123 /LastChar 123 /Widths 38 0 R >>
+<< /Type /Font /Subtype /Type1 /BaseFont /GCRMMP+Dingbats /FontDescriptor 39 0 R /FirstChar 123 /LastChar 123 /Widths 38 0 R /ToUnicode 41 0 R >>
 endobj
 23 0 obj
 << /Type /Pages  /Count 1 /Kids [ 2 0 R ] >>
 endobj
-41 0 obj
+42 0 obj
 << /Names [ (Doc-Start) 21 0 R (page.1) 20 0 R ] /Limits [ (Doc-Start) (page.1) ] >>
 endobj
-42 0 obj
-<< /Dests 41 0 R >>
-endobj
 43 0 obj
-<< /Type /Catalog /Pages 23 0 R /Names 42 0 R /PageMode/UseOutlines/AcroForm 25 0 R /OpenAction 1 0 R >>
+<< /Dests 42 0 R >>
 endobj
 44 0 obj
+<< /Type /Catalog /Pages 23 0 R /Names 43 0 R /PageMode/UseOutlines/AcroForm 25 0 R /OpenAction 1 0 R >>
+endobj
+45 0 obj
 << /Producer (LuaTeX)/Author()/Title()/Subject()/Creator(LaTeX with hyperref)/Keywords() /Trapped /False >>
 endobj
 xref
-0 45
+0 46
 0000000000 65535 f 
 0000000020 00000 n 
 0000003100 00000 n 
@@ -373,7 +438,7 @@ xref
 0000004530 00000 n 
 0000000068 00000 n 
 0000000297 00000 n 
-0000014585 00000 n 
+0000015674 00000 n 
 0000000365 00000 n 
 0000000910 00000 n 
 0000011359 00000 n 
@@ -388,7 +453,7 @@ xref
 0000005446 00000 n 
 0000005506 00000 n 
 0000008656 00000 n 
-0000014728 00000 n 
+0000015835 00000 n 
 0000003224 00000 n 
 0000005637 00000 n 
 0000005773 00000 n 
@@ -406,12 +471,13 @@ xref
 0000011711 00000 n 
 0000014367 00000 n 
 0000011734 00000 n 
-0000014789 00000 n 
-0000014890 00000 n 
-0000014926 00000 n 
-0000015047 00000 n 
+0000014585 00000 n 
+0000015896 00000 n 
+0000015997 00000 n 
+0000016033 00000 n 
+0000016154 00000 n 
 trailer
-<< /Size 45 /Root 43 0 R /Info 44 0 R >>
+<< /Size 46 /Root 44 0 R /Info 45 0 R >>
 startxref
-15171
+16278
 %%EOF

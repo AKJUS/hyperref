@@ -1,3 +1,6 @@
+2026-06-17 Ulrike Fischer
+	* hyperref.dtx: fix faulty language if varioref is used, issue #425
+
 2026-04-28 Ulrike Fischer
 	* hyperref.dtx: fix spurious space in \hyper@refstepcounter, issue #417
 
