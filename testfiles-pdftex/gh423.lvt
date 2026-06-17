@@ -1,0 +1,31 @@
+\input{regression-test}
+\documentclass{book}
+\usepackage{appendix,lipsum}
+\usepackage{hyperref}
+\begin{document}
+\showoutput
+\tableofcontents
+
+\autoref{chap:appendix}, \autoref{chap:annex}
+\chapter{A chapter}\lipsum
+\appendix
+\hypersetup{targetprefix={chapter}{appendix}}
+
+\phantomsection
+\MakeLinkTarget{}
+\hypersetup{targetprefix={anon}{blub}}
+\MakeLinkTarget{}
+\phantomsection
+\chapter{An appendix}\label{chap:appendix}\lipsum
+
+\autoref{chap:appendix}
+%\makeatletter
+%\def\Hy@appendixstring{annex}
+%\makeatother
+%\renewcommand{\appendixname}{Annex}
+
+\hypersetup{targetprefix={chapter}{annex}}
+\appendix
+\chapter{An annex}\label{chap:annex}\lipsum
+
+\end{document}

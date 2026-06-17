@@ -524,11 +524,17 @@
 % We use the same (tex) count \cs{Hy@linkcounter} than the other
 % hyperref commands.
 %    \begin{macrocode}
+\cs_new:Npn \@@_target_anon_prefix: {page}
 \cs_new_protected:Npn \@@_target_counter_anon:n #1
   {
     \int_gincr:N\Hy@linkcounter
     \tl_gset:Ne \@currentHref
-      {\tl_if_blank:nTF{#1}{page}{#1}*.\int_use:N\Hy@linkcounter}
+      {
+        \tl_if_blank:nTF {#1}
+         {\@@_target_anon_prefix:}
+         {#1}*
+         .\int_use:N\Hy@linkcounter
+      }
     \hook_use:n {__hyp/target/setname}
     \@onelevel@sanitize\@currentHref
     \@@_target_raise:n {\hyper@anchorstart{\@currentHref}\hyper@anchorend}
@@ -548,7 +554,13 @@
         don't~exist.~No~target~created.}{}
       }
       {
-        \tl_gset:Ne \@currentHref {\tl_if_blank:nTF{#1}{#2}{#1}.\use:c{theH#2}}
+        \tl_gset:Ne \@currentHref 
+         {
+           \tl_if_blank:nTF{#1}
+             {\cs_if_exist_use:cF {@@_target_#2_prefix:}{#2}}
+             {#1}
+           .\use:c{theH#2}
+         }
         \hook_use:n {@@/target/setname}
         \@onelevel@sanitize\@currentHref
         \@@_target_raise:n {\hyper@anchorstart{\@currentHref}\hyper@anchorend}
@@ -557,6 +569,26 @@
 %    \end{macrocode}
 % \end{macro}
 %
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_target_set_prefix:nn #1#2
+ {
+   \cs_if_exist:cTF { @@_target_#1_prefix: }
+    {
+      \cs_set:cpn
+    }
+    {
+      \cs_new:cpn
+    } 
+    { @@_target_#1_prefix: }{#2} 
+ }
+\define@key{Hyp}{targetprefix}
+ {
+   \@@_target_set_prefix:nn #1
+ }
+\keys_define:nn{hyp}
+ { targetprefix.code:n = \@@_target_set_prefix:nn #1 }
+ 
+%    \end{macrocode}
 % \begin{macro}{\NextLinkTarget}
 %  we rely on the internal hook to set the next target name:
 %    \begin{macrocode}
