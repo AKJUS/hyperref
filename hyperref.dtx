@@ -51,7 +51,7 @@
 %<puvnenc>\ProvidesFile{puvnenc.def}
 %<puarenc>\ProvidesFile{puarenc.def}
 %<psdextra>\ProvidesFile{psdextra.def}
-%<!none&!packageEnd>  [2026-04-24 v7.01q %
+%<!none&!packageEnd>  [2026-06-17 v7.01r %
 %<package>  Hypertext links for LaTeX]
 %<nohyperref>  Dummy hyperref (SR)]
 %<driver>  Hyperref documentation driver file]
@@ -5728,9 +5728,9 @@
 %    Instead of package babel's definition of \cmd{\addto} the
 %    implementation of package varioref is used. Additionally
 %    argument |#1| is checked for \cmd{\relax}.
+%    change 2026-06-17: do not execute \cmd{HyLang@XXX} here, gh/425
 %    \begin{macrocode}
 \def\HyLang@addto#1#2{%
-  #2%
   \@temptokena{#2}%
   \ifx#1\relax
     \let#1\@empty
@@ -5767,6 +5767,10 @@
       \noexpand\define@key{Hyp}{#1}[]{%
         \noexpand\@ifundefined{HyLang@#1@done}{%
           \noexpand\HyLang@addto{\noexpand##1}{\noexpand##2}%
+%    \end{macrocode}
+% Execute the command here to setup the language if babel is not used: gh/425
+%    \begin{macrocode}
+          \noexpand\UseName{HyLang@#2}%
           #3%
           \noexpand\@namedef{HyLang@#1@done}{}%
         }{}%
@@ -10396,7 +10400,7 @@
 %    \begin{macro}{\hyper@refstepcounter}
 %    changed 2026-02-22 to use \cs{MakeLinkTarget}
 %    \begin{macrocode}
-\def\hyper@refstepcounter#1{\ifHy@hypertexnames\MakeLinkTarget{#1}\else\MakeLinkTarget[#1]{} \fi}
+\def\hyper@refstepcounter#1{\ifHy@hypertexnames\MakeLinkTarget{#1}\else\MakeLinkTarget[#1]{}\fi}
 %    \end{macrocode}
 %    \end{macro}
 %    \begin{macro}{\Hy@ProvideTheHCounter}
@@ -10471,6 +10475,8 @@
 %
 %    The ``french'' package defines counter \cmd{\thechapter}
 %    by \cmd{\newcounter{chapter}}, if \cmd{\@ifundefined{chapter}}.
+%    
+%    change  2026-06-17: set the target prefix, issue gh/424
 %    \begin{macrocode}
 \begingroup\expandafter\expandafter\expandafter\endgroup
 \expandafter\ifx\csname chapter\endcsname\relax
@@ -10480,6 +10486,7 @@
 \fi
 \def\Hy@appendixstring{appendix}
 \def\Hy@chapapp{\Hy@chapterstring}
+\hypersetup{target-prefix={chapter}{\Hy@chapapp}}
 \@ifundefined{appendix}{%
 }{%
   \let\HyOrg@appendix\appendix
@@ -10496,11 +10503,12 @@
   }%
   \def\appendix{%
     \@ifundefined{chapter}{%
-      \gdef\theHsection{\Hy@AlphNoErr{section}}%
+      \gdef\theHsection{\Hy@AlphNoErr{section}}%      
     }{%
       \gdef\theHchapter{\Hy@AlphNoErr{chapter}}%
     }%
     \xdef\Hy@chapapp{\Hy@appendixstring}%
+    \hypersetup{target-prefix={section}{\Hy@appendixstring}}%
     \HyOrg@appendix
   }%
 }

@@ -1,0 +1,21 @@
+\input{regression-test}
+\documentclass{article}
+
+\usepackage[toc,page,title,titletoc]{appendix}
+\usepackage{hyperref}
+
+\begin{document}
+\START
+\showoutput
+\section{first}
+
+\autoref*{sec:wind} 
+
+\appendix
+
+\section{Wind} \label{sec:wind}
+
+Something about the wind, how it blows, how it's annoying.
+
+\end{document}
+

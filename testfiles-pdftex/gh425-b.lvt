@@ -1,0 +1,12 @@
+\input{regression-test}
+\documentclass{article}
+\let\extrasnorsk\relax %e.g. done by varioref
+\usepackage[german]{hyperref}
+\START
+\show\sectionautorefname
+\OMIT
+\begin{document}
+\TIMO
+\show\sectionautorefname
+\OMIT
+\end{document}

@@ -1,3 +1,14 @@
+Version 2026-06-17 v7.01r
+
+2026-06-17 Ulrike Fischer
+	* hyperref.dtx: fix faulty language if varioref is used, issue #425
+	* fix target name in appendix, issue #424
+	* fix \autoref for appendix, issue #424
+	* hyperref-linktarget.dtx: add new key target-prefix
+
+2026-04-28 Ulrike Fischer
+	* hyperref.dtx: fix spurious space in \hyper@refstepcounter, issue #417
+
 Version 2026-04-24 v7.01q
 
 2026-04-24 Ulrike Fischer
